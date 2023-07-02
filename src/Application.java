@@ -19,10 +19,9 @@ public class Application {
 		Assignments complexityAssignment = new ComplexityAssignment();
 		complexityAssignment.allQuestion();
 		
-//		System.out.println("\n******************		Array Assignment Part1		********************\n");
-//		
-//		Assignments arrayAssignment = new ArrayAssignmentPart1();
-//		arrayAssignment.allQuestion();
+		System.out.println("\n******************		Array Assignment Part1		********************\n");
+		Assignments arrayAssignment = new ArrayAssignmentPart1();
+		arrayAssignment.allQuestion();
 	}
 
 }
