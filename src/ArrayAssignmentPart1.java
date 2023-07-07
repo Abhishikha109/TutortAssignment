@@ -50,7 +50,7 @@ public class ArrayAssignmentPart1 extends CommonMethods implements Assignments{
 		System.out.println(question7_maxProfit2(new int[] {7,1,3,6,3,8}));
 		System.out.println(question8_majorityElement(new int[] {3,1,3,6,3,3}));
 		System.out.println(question9_majorityElement(new int[] {3,2,3}));
-		System.out.println(question10_findMissing(new int[] {0}, 1));
+		System.out.println(question10_findMissing(new int[] {0, 1, 3, 50, 75}, 5));
 		System.out.println(question11_threeSum(new int[] {-1,0,1,2,-1,-4}));
 		System.out.println(question13_threeSumClosest(new int[] {-1,2,1,-4}, 1));
 		System.out.println(question14_fourSum(new int[] {2,2,2,2,2}, 8));
