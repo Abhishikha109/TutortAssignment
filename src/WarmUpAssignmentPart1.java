@@ -35,8 +35,7 @@ public class WarmUpAssignmentPart1 extends CommonMethods implements Assignments{
 	}
 	
 	private int question3(int[] arr3, int x) {
-		printQuestion("\n3. Sorted array. Find number of elements which are less than or equal to given"
-				+ "element X.");
+		printQuestion("\n3. Sorted array. Find number of elements which are less than or equal to given element X.");
 		
 		int count = 0;
 		for(int i=0; i<arr3.length; i++) {

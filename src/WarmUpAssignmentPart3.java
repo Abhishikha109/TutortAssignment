@@ -104,8 +104,6 @@ public class WarmUpAssignmentPart3 extends CommonMethods implements Assignments{
         if(n <= 0)
             return false;
 
-        boolean flag = true;
-
         while(n%2 == 0){
             n = n/2;
         }

@@ -43,7 +43,6 @@ public class ArrayAssignmentPart2 extends CommonMethods implements Assignments{
 	@Override
 	public void allQuestion() {
 		question1_moveZeroes(new int[] {0,1,0,3,12});
-		String abc = "dab";
 		System.out.println(question2_containsDuplicate(new int[] {1,1,1,3,3,4,3,2,4,2}));
 		System.out.println(question3_containsNearbyDuplicate(new int[] {1,0,1,1}, 1));
 		System.out.println(question4_summaryRanges(new int[] {0,2,3,4,6,8,9}));
