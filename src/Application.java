@@ -30,6 +30,14 @@ public class Application {
 		System.out.println("\n******************		Array Assignment Part3		********************\n");
 		Assignments arrayAssignmentPart3 = new ArrayAssignmentPart3();
 		arrayAssignmentPart3.allQuestion();
+		
+//		System.out.println("\n******************		Array Assignment Part4		********************\n");
+//		Assignments arrayAssignmentPart4 = new ArrayAssignmentPart4();
+//		arrayAssignmentPart4.allQuestion();
+		
+		System.out.println("\n******************		Array Assignment Part5		********************\n");
+		Assignments arrayAssignmentPart5 = new ArrayAssignmentPart5();
+		arrayAssignmentPart5.allQuestion();
 	}
 
 }
