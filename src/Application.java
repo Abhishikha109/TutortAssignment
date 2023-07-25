@@ -39,9 +39,9 @@ public class Application {
 		Assignments arrayAssignmentPart5 = new ArrayAssignmentPart5();
 		arrayAssignmentPart5.allQuestion();
 		
-//		System.out.println("\n******************		Recursion Assignment		********************\n");
-//		Assignments recursionAssignment = new RecursionAssignment();
-//		recursionAssignment.allQuestion();
+		System.out.println("\n******************		Recursion Assignment		********************\n");
+		Assignments recursionAssignment = new RecursionAssignment();
+		recursionAssignment.allQuestion();
 	}
 
 }
