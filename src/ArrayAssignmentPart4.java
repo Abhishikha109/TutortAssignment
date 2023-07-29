@@ -332,15 +332,25 @@ public class ArrayAssignmentPart4 extends CommonMethods implements Assignments{
             if(arr[i] == 0) zeroes++;
         }
 
-        for(int i=n-1; i>=0; i--){
-            if(i + zeroes < n)
-                arr[i + zeroes] = arr[i];
-            if(arr[i] == 0){
-                zeroes--;
-                if(i + zeroes < n){
-                    arr[i + zeroes] = 0;
+        int i = n-1, j=n-1+zeroes;
+
+        while(i < j){
+            if(arr[i] != 0){
+                if(j < n){
+                    arr[j] = arr[i];
+                }
+            }else
+            {
+                if(j < n){
+                    arr[j] = 0;
+                }
+                j--;
+                if(j>=0 && j < n){
+                    arr[j] = 0;
                 }
             }
+            i--;
+            j--;
         }
         
         return arr;
@@ -414,12 +424,32 @@ public class ArrayAssignmentPart4 extends CommonMethods implements Assignments{
 	private int question12_longestOnes(int[] nums, int K) {
 		printQuestion("\n12. Max Consecutive Ones III");
 		
-        int i = 0, j;
-        for (j = 0; j < nums.length; ++j) {
-            if (nums[j] == 0) K--;
-            if (K < 0 && nums[i++] == 0) K++;
+//        int i = 0, j;
+//        for (j = 0; j < nums.length; ++j) {
+//            if (nums[j] == 0) K--;
+//            if (K < 0 && nums[i++] == 0) K++;
+//        }
+//        return j - i;
+		
+        int zeros = 0, left = 0, maxLength = Integer.MIN_VALUE;
+
+        for(int right=0; right < nums.length; right++){
+            if(nums[right] == 0){
+                zeros++;
+            }
+            if(zeros > K){
+                while(zeros > K){
+                    if(nums[left] == 0){
+                        zeros--;
+                    }
+                    left++;
+                }
+            }
+
+            maxLength = Math.max(maxLength, right-left+1);
         }
-        return j - i;
+
+        return maxLength;
     }
 	
 	class TopVotedCandidate {
