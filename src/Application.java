@@ -42,6 +42,10 @@ public class Application {
 		System.out.println("\n******************		Recursion Assignment		********************\n");
 		Assignments recursionAssignment = new RecursionAssignment();
 		recursionAssignment.allQuestion();
+		
+		System.out.println("\n******************	Linked List Assignment Part 1	********************\n");
+		Assignments linkedListAssignmentPart1 = new LinkedListAssignmentPart1();
+		linkedListAssignmentPart1.allQuestion();
 	}
 
 }
