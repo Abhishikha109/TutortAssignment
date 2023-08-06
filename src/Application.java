@@ -46,6 +46,10 @@ public class Application {
 		System.out.println("\n******************	Linked List Assignment Part 1	********************\n");
 		Assignments linkedListAssignmentPart1 = new LinkedListAssignmentPart1();
 		linkedListAssignmentPart1.allQuestion();
+		
+		System.out.println("\n******************	Linked List Assignment Part 2	********************\n");
+		Assignments linkedListAssignmentPart2 = new LinkedListAssignmentPart2();
+		linkedListAssignmentPart2.allQuestion();
 	}
 
 }
